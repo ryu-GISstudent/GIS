@@ -3,8 +3,7 @@
 Hi i'm Ryunosuke (family name is Nakazawa)
 I from koshigaya city prefecture saitama.
 My passion is Musik listen.
-I like hiphop music and old japanease music. 
-
+I like hiphop music and old japanese music. 
 also i like build a desk top PC, but never touch software.
 i interrest programing and GIS!!!!
 
