@@ -1,0 +1,16 @@
+# import folium, a leaflet python library
+import folium
+
+# create a list of lat/lon pair for UCLA
+reitaku = [35.8330, 139.9550]
+
+# make the map
+m = folium.Map(location=reitaku, zoom_start=15)
+
+# add a marker
+folium.Marker(reitaku, popup="Reitaku University, the best place on earth!", tooltip="Reitaku University").add_to(m)
+
+# show the map
+m
+
+m.save("<map name="" class=""></map>html")
