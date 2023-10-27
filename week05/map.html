@@ -1,16 +1,259 @@
-# import folium, a leaflet python library
-import folium
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8325718bbc97176fee1c2f7d59775450 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8325718bbc97176fee1c2f7d59775450" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8325718bbc97176fee1c2f7d59775450 = L.map(
+                "map_8325718bbc97176fee1c2f7d59775450",
+                {
+                    center: [35.92418652154995, 139.77793816557548],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
-# create a list of lat/lon pair for UCLA
-reitaku = [35.8330, 139.9550]
+            
 
-# make the map
-m = folium.Map(location=reitaku, zoom_start=15)
+        
+    
+            var tile_layer_979e6860548fca0207ec13cb71f194ee = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+            var marker_00d6fcdc2f180c1d4930d7e36a4dd413 = L.marker(
+                [35.92418652154995, 139.77793816557548],
+                {}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+        var popup_1e19ccf369bb77e73cdafdce03b43e29 = L.popup({"maxWidth": "100%"});
 
-# add a marker
-folium.Marker(reitaku, popup="Reitaku University, the best place on earth!", tooltip="Reitaku University").add_to(m)
+        
+            
+                var html_1bae2f48efdd9492847a36ec32237230 = $(`<div id="html_1bae2f48efdd9492847a36ec32237230" style="width: 100.0%; height: 100.0%;">駅です</div>`)[0];
+                popup_1e19ccf369bb77e73cdafdce03b43e29.setContent(html_1bae2f48efdd9492847a36ec32237230);
+            
+        
 
-# show the map
-m
+        marker_00d6fcdc2f180c1d4930d7e36a4dd413.bindPopup(popup_1e19ccf369bb77e73cdafdce03b43e29)
+        ;
 
-m.save("<map name="" class=""></map>html")
+        
+    
+    
+            marker_00d6fcdc2f180c1d4930d7e36a4dd413.bindTooltip(
+                `<div>
+                     大袋駅
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bd23a51fd0faef3517e984a229273e0 = L.marker(
+                [35.92440230851712, 139.7776119398692],
+                {}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+            var icon_77a863e957db135d93817f319b40b9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6bd23a51fd0faef3517e984a229273e0.setIcon(icon_77a863e957db135d93817f319b40b9aa);
+        
+    
+        var popup_ca3168bba5950afabf42f54a0ec8b0dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa259ee6cd07d2c1cdfab9573a47e83 = $(`<div id="html_0aa259ee6cd07d2c1cdfab9573a47e83" style="width: 100.0%; height: 100.0%;">駅から36M</div>`)[0];
+                popup_ca3168bba5950afabf42f54a0ec8b0dd.setContent(html_0aa259ee6cd07d2c1cdfab9573a47e83);
+            
+        
+
+        marker_6bd23a51fd0faef3517e984a229273e0.bindPopup(popup_ca3168bba5950afabf42f54a0ec8b0dd)
+        ;
+
+        
+    
+    
+            marker_6bd23a51fd0faef3517e984a229273e0.bindTooltip(
+                `<div>
+                     西口店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81a3e17e9bed968b8ae78a64d1983c8 = L.marker(
+                [35.92318701853483, 139.7784683423062],
+                {}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+            var icon_1188323994e088332ab2d5f77abf6bb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b81a3e17e9bed968b8ae78a64d1983c8.setIcon(icon_1188323994e088332ab2d5f77abf6bb3);
+        
+    
+        var popup_f737a9871b071b3c53d763065bc6b8d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54951c92540681f93b18c3142be81b31 = $(`<div id="html_54951c92540681f93b18c3142be81b31" style="width: 100.0%; height: 100.0%;">駅から170M</div>`)[0];
+                popup_f737a9871b071b3c53d763065bc6b8d5.setContent(html_54951c92540681f93b18c3142be81b31);
+            
+        
+
+        marker_b81a3e17e9bed968b8ae78a64d1983c8.bindPopup(popup_f737a9871b071b3c53d763065bc6b8d5)
+        ;
+
+        
+    
+    
+            marker_b81a3e17e9bed968b8ae78a64d1983c8.bindTooltip(
+                `<div>
+                     東口店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d80c752d5610a42ec101c4587b9ab87 = L.marker(
+                [35.926068091596136, 139.78238033731785],
+                {}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+            var icon_75134e497e912fff2844ecfafded8958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d80c752d5610a42ec101c4587b9ab87.setIcon(icon_75134e497e912fff2844ecfafded8958);
+        
+    
+        var popup_ac3b63f5eb6ac0379555cfb677492d95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_353fee8f67aa59292f2fc0827e711af3 = $(`<div id="html_353fee8f67aa59292f2fc0827e711af3" style="width: 100.0%; height: 100.0%;">駅から550M</div>`)[0];
+                popup_ac3b63f5eb6ac0379555cfb677492d95.setContent(html_353fee8f67aa59292f2fc0827e711af3);
+            
+        
+
+        marker_4d80c752d5610a42ec101c4587b9ab87.bindPopup(popup_ac3b63f5eb6ac0379555cfb677492d95)
+        ;
+
+        
+    
+    
+            marker_4d80c752d5610a42ec101c4587b9ab87.bindTooltip(
+                `<div>
+                     下間久里店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd0cc1d597cf1a89e3f13d4988e9ef33 = L.marker(
+                [35.92211703000093, 139.7594470966291],
+                {}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+            var icon_7bd84705000f2a9dc3c2aa529cf6238c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_dd0cc1d597cf1a89e3f13d4988e9ef33.setIcon(icon_7bd84705000f2a9dc3c2aa529cf6238c);
+        
+    
+        var popup_b97872705dc637d4190c502bada1aad9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9159861af59426abd8dc8b0344192e8c = $(`<div id="html_9159861af59426abd8dc8b0344192e8c" style="width: 100.0%; height: 100.0%;">駅から1.7KM</div>`)[0];
+                popup_b97872705dc637d4190c502bada1aad9.setContent(html_9159861af59426abd8dc8b0344192e8c);
+            
+        
+
+        marker_dd0cc1d597cf1a89e3f13d4988e9ef33.bindPopup(popup_b97872705dc637d4190c502bada1aad9)
+        ;
+
+        
+    
+    
+            marker_dd0cc1d597cf1a89e3f13d4988e9ef33.bindTooltip(
+                `<div>
+                     大袋店
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8337ac7f41dc68e2a969037dab96ca9b = L.circleMarker(
+                [35.92418652154995, 139.77793816557548],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(map_8325718bbc97176fee1c2f7d59775450);
+        
+    
+        var popup_dbc58407b6a399e3f4a68b66af792d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a06fe6bb2a2f91836bc0a72e833744 = $(`<div id="html_e4a06fe6bb2a2f91836bc0a72e833744" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>`)[0];
+                popup_dbc58407b6a399e3f4a68b66af792d39.setContent(html_e4a06fe6bb2a2f91836bc0a72e833744);
+            
+        
+
+        circle_marker_8337ac7f41dc68e2a969037dab96ca9b.bindPopup(popup_dbc58407b6a399e3f4a68b66af792d39)
+        ;
+
+        
+    
+</script>
+</html>
